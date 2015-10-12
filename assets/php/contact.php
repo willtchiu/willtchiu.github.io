@@ -7,7 +7,7 @@ if(isset($_POST['message'])){
 	$message = $_POST['message'];
     
 	
-	$to      = 'you@example.com';
+	$to      = 'will@willtchiu.me';
 	$subject = 'Site Contact Form';
 
 	$headers = 'From: '. $email . "\r\n" .
@@ -20,7 +20,7 @@ if(isset($_POST['message'])){
 		$res['sendstatus'] = 'done';
 	
 		//Edit your message here
-		$res['message'] = 'Form Submission Successful';
+		$res['message'] = 'Mail Sent Successfully';
     }
 	else{
 		$res['message'] = 'Failed to send mail. Please mail me to you@example.com';
